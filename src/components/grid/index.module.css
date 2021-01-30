@@ -1,0 +1,19 @@
+.Grid {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.Grid > div {
+    display: flex;
+    justify-content: stretch;
+}
+
+.Grid > div > * {
+    flex: 1;
+}
+
+.Grid > * {
+    flex: 1;
+}

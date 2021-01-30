@@ -1,0 +1,1 @@
+export const OPEN_SLOT_ID = -1;

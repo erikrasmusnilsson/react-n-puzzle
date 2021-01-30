@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import Game from './components/game';
+import { useState } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const NUM_ROWS = 4;
+const NUM_COLS = 4;
+
+const App = () => {
+    const [cols, setCols] = useState(NUM_COLS);
+    const [rows, setRows] = useState(NUM_ROWS);
+
+    const onRowsChanged = (rows) => {
+        if (rows > 1) {
+            setRows(rows);
+        }
+    }
+
+    const onColsChanged = (cols) => {
+        if (cols > 1) {
+            setCols(cols);
+        }
+    }
+
+    return (
+        <div className={ styles.App }>
+            <Game 
+                rows={ rows } 
+                cols={ cols }
+                setRows={ onRowsChanged }
+                setCols={ onColsChanged }/>
+        </div>
   );
 }
 

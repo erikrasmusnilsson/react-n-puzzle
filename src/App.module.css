@@ -1,0 +1,18 @@
+.App {
+    display: flex;
+    justify-content: stretch;
+    margin: auto;
+    flex-direction: column;
+    width: 76.8rem;
+}
+
+.App > * {
+    flex: 1;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .App {
+        width: 100%;
+    }
+}

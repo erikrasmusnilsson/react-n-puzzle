@@ -1,0 +1,21 @@
+.Controls {
+    padding: 2.4rem;
+    display: inline-block;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Controls > input {
+    margin: 1.2rem;
+    width: 6.4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .Controls {
+        padding-right: 0;
+    }
+
+    .Controls > input {
+        margin: .8rem;
+    }
+}

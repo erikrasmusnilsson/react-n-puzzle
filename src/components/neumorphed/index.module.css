@@ -1,0 +1,14 @@
+.Neumorphed {
+    border-radius: 5rem;
+    background: #9edaff;
+    box-shadow: 2rem 2rem 6rem #86b9d9, -2rem -2rem 6rem #b6fbff;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .Neumorphed {
+        border-radius: 2.5rem;
+        background: #9edaff;
+        box-shadow: 1rem 1rem 3rem #86b9d9, -1rem -1rem 3rem #b6fbff;
+    }
+}
